@@ -50,10 +50,9 @@ def save
   end
   
   
-  def self.create(name:, grade:)
-    students = Student.new(name, grade)
-    students.save
-    students
+  def self.create(name, grade)
+    student = Student.new(name, grade)
+    student.save
   end
   
   def self.drop_table
