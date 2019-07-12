@@ -51,8 +51,8 @@ def save
   
   
   def self.create(name, grade)
-    student = Student.new(name, grade)
-    student.save
+    students = Student.new(name, grade)
+    students.save
   end
   
   def self.drop_table
