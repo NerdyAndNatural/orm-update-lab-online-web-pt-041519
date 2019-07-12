@@ -61,7 +61,7 @@ def save
   end
   
   
- def update
+ def self.update
       sql = <<-SQL
         UPDATE students
         SET name = ?, grade = ?
